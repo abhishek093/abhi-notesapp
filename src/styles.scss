@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+header{
+    background-color: #f3f2ef;
+    width: 100%;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    // margin-bottom: 10px;
+}
+.body_cont{
+    position: relative;
+    top: 34px;
+}
+.actionIcon{
+    background-color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+i.fa{
+    cursor: pointer;
+}
+.folderName{
+    padding: 5px 10px;
+    &:hover, &.active{
+        background-color: blue;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.paddZero{
+    padding: 0;
+    background-color: #e3f5f7;
+    height: calc(100vh - 30px);
+}
+.paddZeroNotes{
+    padding: 0;
+}
+.notes_cont{
+    height: 100%;
+    border-right: 1px solid #f1f0f0;
+    .notes{
+        padding: 10px 20px;
+        background-color: #fdfeff;
+        border-top: 1px solid #f1f0f0;
+        border-bottom: 1px solid #f1f0f0;
+        &.active{
+            background-color: #e4e4e4;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .subCont{
+            display: flex;
+            span{
+                font-size: 12px;
+                min-width: 60px;
+            }
+            span.subtitle{
+                color: #a0a1a5;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        
+    }
+}
+.folder_cont{
+    font-size: 14px;
+    height: 100%;
+}
+.actionFolder{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.editor_cont{
+    padding: 20px;
+    .timeTitle{
+        text-align: center;
+        font-size: 14px;
+        color: #8e8585;
+    }
+    #editorContent{
+        width: 100%;
+        min-height: 500px;
+        border: none;
+        outline: none;
+    }
+}

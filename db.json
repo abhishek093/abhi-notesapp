@@ -1,0 +1,151 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "folderName": "Abhishek",
+      "createdDate": "2019-10-10T21:36:32.311Z"
+    },
+    {
+      "id": 2,
+      "folderName": "targetX",
+      "createdDate": "2019-10-12T13:46:00.532Z"
+    },
+    {
+      "id": 3,
+      "folderName": "Gyan Matrix",
+      "createdDate": "2019-10-12T13:46:26.837Z"
+    },
+    {
+      "id": 4,
+      "folderName": "demo",
+      "createdDate": "2019-10-12T14:05:24.187Z"
+    },
+    {
+      "id": 5,
+      "folderName": "demo2",
+      "createdDate": "2019-10-12T14:20:46.529Z"
+    }
+  ],
+  "notes": [
+    {
+      "folderId": 1,
+      "title": "MacOS Notes App Clone",
+      "subTitle": "Create a stripped down clone of the MacOS Notes App Lorem ipsum dolor sit amet consectetur.",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur. ",
+      "modifiedDateTime": "2019-10-12T14:21:32.473Z",
+      "id": 1
+    },
+    {
+      "id": 6,
+      "folderId": 3,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:04:30.323Z"
+    },
+    {
+      "id": 8,
+      "folderId": 3,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:04:40.278Z"
+    },
+    {
+      "id": 9,
+      "folderId": 3,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:05:17.041Z"
+    },
+    {
+      "id": 7,
+      "folderId": 1,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:09:32.138Z"
+    },
+    {
+      "id": 11,
+      "folderId": 1,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:20:00.484Z"
+    },
+    {
+      "id": 12,
+      "folderId": 1,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:20:01.967Z"
+    },
+    {
+      "id": 15,
+      "folderId": 4,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:20:09.295Z"
+    },
+    {
+      "id": 16,
+      "folderId": 4,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:20:09.472Z"
+    },
+    {
+      "id": 17,
+      "folderId": 4,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:20:30.597Z"
+    },
+    {
+      "id": 19,
+      "folderId": 2,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:21:41.594Z"
+    },
+    {
+      "id": 20,
+      "folderId": 1,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:24:14.201Z"
+    },
+    {
+      "id": 21,
+      "folderId": 4,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:24:21.579Z"
+    },
+    {
+      "id": 22,
+      "folderId": 2,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:24:57.021Z"
+    },
+    {
+      "id": 23,
+      "folderId": 5,
+      "title": "New note",
+      "subTitle": "No addition text",
+      "content": "",
+      "modifiedDateTime": "2019-10-12T14:25:08.086Z"
+    }
+  ]
+}

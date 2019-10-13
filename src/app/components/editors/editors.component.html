@@ -1,0 +1,4 @@
+<div class="editor_cont" *ngIf="editorData">
+  <p class="timeTitle">{{editorData.modifiedDateTime | date: 'dd/MM/yyyy HH:SS'}}</p>
+  <textarea name="" id="editorContent" [(ngModel)] = "editorContent" (ngModelChange) = "contentChanges(editorContent)"></textarea>
+</div>

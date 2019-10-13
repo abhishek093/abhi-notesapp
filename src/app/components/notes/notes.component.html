@@ -1,0 +1,9 @@
+<div class="notes_cont" *ngIf="data">
+  <div class="notes" *ngFor= "let note of data.sort(sortFunc)" [ngClass]="{'active': selectedItem == note}" (click)="selectedNote($event, note)">
+    <p><b>{{note.title}}</b></p>
+    <div class="subCont">
+      <span>{{note.modifiedDateTime | date: 'dd/MM/yyyy'}} </span> &nbsp;
+      <span class="subtitle">{{note.subTitle}}</span>
+    </div>
+  </div>
+</div>
