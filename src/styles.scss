@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+$backgroundColor : #f3f2ef;
 header{
-    background-color: #f3f2ef;
+    background-color: $backgroundColor;
     width: 100%;
     padding: 5px 20px;
     position: fixed;
@@ -16,8 +17,20 @@ header{
         margin-top: -3px;
         input{
             height: 22px;
-            font-size: 12px;
-            padding: 5px;
+            font-size: 11px;
+            padding: 12px 10px 11px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-appearance: none;
+            -webkit-border-radius: 4px;
+            ::placeholder{
+                color: #929292;
+            }
+            &:focus{
+                border: 1px solid #ccc;
+                outline: 0;
+            }
         }
     }
 }
@@ -30,6 +43,10 @@ header{
     padding: 3px 10px;
     border-radius: 5px;
     margin-left: 5px;
+    border: 1px solid #ccc;
+    i.fa{
+        color: #929292;
+    }
 }
 i.fa{
     cursor: pointer;
