@@ -46,8 +46,8 @@
       "folderId": 1,
       "title": "MacOS Notes App Clone",
       "subTitle": "Create a stripped down clone of the MacOS Notes App Lorem ipsum dolor sit amet consectetur.",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur.sdfsdf",
-      "modifiedDateTime": "2019-10-13T11:40:45.214Z",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur.",
+      "modifiedDateTime": "2019-10-13T11:53:28.099Z",
       "id": 1
     },
     {
@@ -99,12 +99,12 @@
       "modifiedDateTime": "2019-10-13T11:35:00.845Z"
     },
     {
-      "id": 9,
       "folderId": 1,
       "title": "New note",
-      "subTitle": "No addition text",
+      "subTitle": "No addition textxcxc",
       "content": "",
-      "modifiedDateTime": "2019-10-13T11:40:42.241Z"
+      "modifiedDateTime": "2019-10-13T11:53:24.260Z",
+      "id": 9
     },
     {
       "id": 11,
