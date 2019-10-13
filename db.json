@@ -4,41 +4,6 @@
       "id": 1,
       "folderName": "Abhishek",
       "createdDate": "2019-10-13T09:43:32.026Z"
-    },
-    {
-      "id": 2,
-      "folderName": "Gyan Matrix",
-      "createdDate": "2019-10-13T11:05:30.076Z"
-    },
-    {
-      "id": 3,
-      "folderName": "demo",
-      "createdDate": "2019-10-13T11:05:48.597Z"
-    },
-    {
-      "id": 4,
-      "folderName": "sfsdfsdf",
-      "createdDate": "2019-10-13T11:08:35.886Z"
-    },
-    {
-      "id": 5,
-      "folderName": "demo2",
-      "createdDate": "2019-10-13T11:30:48.035Z"
-    },
-    {
-      "id": 6,
-      "folderName": "hhhffgdg",
-      "createdDate": "2019-10-13T11:34:17.821Z"
-    },
-    {
-      "id": 7,
-      "folderName": "eretert",
-      "createdDate": "2019-10-13T11:34:53.779Z"
-    },
-    {
-      "id": 8,
-      "folderName": "coding test1",
-      "createdDate": "2019-10-13T11:42:01.435Z"
     }
   ],
   "notes": [
@@ -49,70 +14,6 @@
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam tempora minima, nulla accusantium ad. Consequatur vero esse reiciendis nisi? Laudantium corporis quam aperiam similique cupiditate distinctio modi nihil consequatur.",
       "modifiedDateTime": "2019-10-13T11:53:28.099Z",
       "id": 1
-    },
-    {
-      "id": 2,
-      "folderId": 1,
-      "title": "New note",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:05:08.704Z"
-    },
-    {
-      "folderId": 2,
-      "title": "New notexcvxv",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:08:16.309Z",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "folderId": 3,
-      "title": "New note",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:08:22.163Z"
-    },
-    {
-      "id": 6,
-      "folderId": 4,
-      "title": "New note",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:08:45.541Z"
-    },
-    {
-      "folderId": 1,
-      "title": "New note",
-      "subTitle": "No addition textxcvxcvx",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:40:26.166Z",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "folderId": 7,
-      "title": "New note",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:35:00.845Z"
-    },
-    {
-      "folderId": 1,
-      "title": "New note",
-      "subTitle": "No addition textxcxc",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:53:24.260Z",
-      "id": 9
-    },
-    {
-      "id": 11,
-      "folderId": 8,
-      "title": "New note",
-      "subTitle": "No addition text",
-      "content": "",
-      "modifiedDateTime": "2019-10-13T11:42:13.773Z"
     }
   ]
 }
