@@ -12,53 +12,61 @@ export class AllSetupService {
   public config1: ToasterConfig = new ToasterConfig({
     positionClass: 'toast-top-center'
   });
+  currentDomain = "http://localhost:3000/"
   constructor(private http : HttpClient, toasterService: ToasterService) {
     this.toasterService = toasterService;
   }
   addFolderService(body){
-    return this.http.post('http://localhost:3000/folders', body)
+    return this.http.post(this.currentDomain+'folders', body)
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   getFolderService(){
-    return this.http.get('http://localhost:3000/folders?_sort=folderName&_order=asc')
+    return this.http.get(this.currentDomain+'folders')
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   getNotesService(id){
-    return this.http.get('http://localhost:3000/notes?folderId='+id)
+    return this.http.get(this.currentDomain+'notes?folderId='+id)
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   getAllNotesService(){
-    return this.http.get('http://localhost:3000/notes')
+    return this.http.get(this.currentDomain+'notes')
+    .pipe(
+      retry(0),
+      catchError(this.customError)
+    );
+  }
+  searchNotesService(txt){
+    return this.http.get(this.currentDomain+'notes?q='+txt)
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   addNoteService(body){
-    return this.http.post('http://localhost:3000/notes', body)
+    return this.http.post(this.currentDomain+'notes', body)
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   updateNoteService(body , id){
-    return this.http.put('http://localhost:3000/notes/'+id, body)
+    return this.http.put(this.currentDomain+'notes/'+id, body)
     .pipe(
       retry(0),
       catchError(this.customError)
     );
   }
   deleteNoteService(id){
-    return this.http.delete('http://localhost:3000/notes/'+id)
+    return this.http.delete(this.currentDomain+'notes/'+id)
     .pipe(
       retry(0),
       catchError(this.customError)

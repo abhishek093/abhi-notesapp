@@ -8,16 +8,34 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class FoldersComponent implements OnInit {
   @Input() data : any;
   @Output() activeFolder = new EventEmitter<any>();
-  selectedItem = {};
+  @Input() activatedFolder : any;
+  selectedItem ={};
   sortedData : any;
-  constructor() { }
+  folderList;
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }
   ngOnChanges(){
+
     if(this.data){
       // console.log("folder list: ", this.data);
-      this.selectedItem = this.data[0];
+      
+      this.folderList = this.data;
+
+      if(!this.activatedFolder){
+        this.selectedItem = this.folderList[0];
+      }else{
+        this.selectedItem = this.activatedFolder;
+      }
+      // this.folderList.sort(function (a, b) {
+      //   return a.folderName.rendered - b.folderName.rendered;
+      // });
+      // console.log("thsidsfsdf:" , this.folderList);
+      
+      // this.folderList.sort((a,b) => a.folderName.rendered.localeCompare(b.folderName.rendered));
     }
     
   }

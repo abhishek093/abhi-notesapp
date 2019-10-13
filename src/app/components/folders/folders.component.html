@@ -1,6 +1,6 @@
 <div class="folder_cont">
   <div class="folders">
-      <div class="folderName" [ngClass]="{'active': selectedItem == folder}" *ngFor= "let folder of data" (click)="selectedfolder($event, folder)">
+      <div class="folderName" [ngClass]="{'active': selectedItem == folder}" *ngFor= "let folder of folderList | orderby" (click)="selectedfolder($event, folder)">
         <span>{{folder.folderName}}</span>
       </div>
     </div>

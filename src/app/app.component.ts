@@ -17,6 +17,8 @@ export class AppComponent {
   folder_id;
   notesLength = 0;
   notesData;
+  searchText;
+  activeFolderDetails;
   private toasterService: ToasterService;
   public config1: ToasterConfig = new ToasterConfig({
     positionClass: 'toast-top-right'
@@ -34,8 +36,10 @@ export class AppComponent {
   getAllFolders(){
     this.service.getFolderService().subscribe(data =>{
       this.folderList = data;
+      this.activeFolderDetails = this.folderList[0];
+      this.activatedNote = undefined;
       // console.log("folder data:", this.folderList);
-      this.getNotes(this.folderList[0].id);
+      this.getNotes(this.folderList[0].id , undefined);
     },
     error =>{
       const toast: Toast = {
@@ -51,6 +55,7 @@ export class AppComponent {
       this.displayFolderFlag = false;
     }else{
       this.displayFolderFlag = true;
+      // this.getNotes(this.folder_id , undefined);
     }
   }
   createFolder(){
@@ -84,15 +89,33 @@ export class AppComponent {
   }
   
   selectedFolder(evt){
+    this.activeFolderDetails = evt;
     this.activatedNote = undefined;
+    this.searchText = "";
     // console.log("selected folder in app:", evt);
     this.folder_id = evt.id;
-    this.getNotes(evt.id);
+    this.getNotes(evt.id , undefined);
   }
-  getNotes(id){
+  response : any;
+
+  getNotes(id , filteredData){
+    
     this.service.getNotesService(id).subscribe(data =>{
-      if(data){
-        this.notesList = data;
+      let arr = [];
+      this.response = data;
+      if(this.response){
+        if(filteredData != undefined && filteredData.length > 0){
+          for (let i = 0; i < filteredData.length; i++) {
+            for (let j = 0; j < this.response.length; j++) {
+              if(filteredData[i].id === this.response[j].id){
+                arr.push(filteredData[i])
+              }
+            }
+          }
+          this.notesList = arr;
+        }else{
+          this.notesList = data;
+        }
         // console.log("notes list:", data);
       }
     },
@@ -126,7 +149,7 @@ export class AppComponent {
         this.service.addNoteService(body).subscribe(data =>{
           if(data){
             this.notesLength = body.id;
-            this.getNotes(this.folder_id);
+            this.getNotes(this.folder_id, undefined);
             let toast: Toast = {
               type: 'success',
               body: 'Note created successfully.',
@@ -179,7 +202,7 @@ export class AppComponent {
           //   this.notesLength = this.notesLength - 1;
           // }
           this.activatedNote = undefined;
-          this.getNotes(this.folder_id);
+          this.getNotes(this.folder_id, undefined);
           let toast: Toast = {
             type: 'success',
             body: 'Note deleted successfully.',
@@ -204,5 +227,13 @@ export class AppComponent {
       };
       this.toasterService.pop(toast);
     }
+  }
+  search(searchText){
+    this.service.searchNotesService(searchText).subscribe(data =>{
+      // console.log("this.filtered data:", data);
+      if(data){
+        this.getNotes(this.folder_id , data);
+      }
+    })
   }
 }

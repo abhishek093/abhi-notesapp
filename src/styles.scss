@@ -8,6 +8,18 @@ header{
     left: 0;
     z-index: 2;
     // margin-bottom: 10px;
+    margin: 0;
+    .search{
+        float: right;
+        height: 22px;
+        display: block;
+        margin-top: -3px;
+        input{
+            height: 22px;
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
 }
 .body_cont{
     position: relative;
@@ -25,15 +37,16 @@ i.fa{
 .folderName{
     padding: 5px 10px;
     &:hover, &.active{
-        background-color: blue;
-        color: #fff;
+        background-color:#e4e4e4;
+        color: #000;
         cursor: pointer;
     }
 }
 
 .paddZero{
     padding: 0;
-    background-color: #e3f5f7;
+    background-color: #fdfeff;
+    border-right: 1px solid #f1f0f0;
     height: calc(100vh - 30px);
 }
 .paddZeroNotes{

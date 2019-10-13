@@ -11,13 +11,15 @@ import { NotesComponent } from './components/notes/notes.component';
 import { EditorsComponent } from './components/editors/editors.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ToasterModule, ToasterService} from 'angular2-toaster';
+import {OrderByPipe} from './components/folders/orderby.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FoldersComponent,
     NotesComponent,
-    EditorsComponent
+    EditorsComponent,
+    OrderByPipe
   ],
   imports: [
     CommonModule,

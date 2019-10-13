@@ -1,21 +1,29 @@
 <toaster-container [toasterconfig]="config1"></toaster-container>
 <div class="container-fluid">
-  <div class="row">
-    <header [ngStyle]="{'padding-left':displayFolderFlag ? '135px' : '10px' }">
-      <span class="actionIcon">
-        <i class="fa fa-columns" aria-hidden="true" (click)="toggle()" [title]= "displayFolderFlag ? 'Hide folders' : 'Show folders'"></i>
-      </span>
-      <span class="actionIcon">
-        <i class="fa fa-trash" aria-hidden="true" title="Delete" (click)="deleteNote()"></i>
-      </span>
-      <span class="actionIcon">
-        <i class="fa fa-pencil-square-o" aria-hidden="true" title="Create a note" (click)="createNote()"></i>
-      </span>
+  <div class="header_cont">
+    <header [ngStyle]="{'padding-left':displayFolderFlag ? '135px' : '10px' }" class="row">
+      <div class="col-sm-8">
+        <span class="actionIcon">
+          <i class="fa fa-columns" aria-hidden="true" (click)="toggle()" [title]= "displayFolderFlag ? 'Hide folders' : 'Show folders'"></i>
+        </span>
+        <span class="actionIcon">
+          <i class="fa fa-trash" aria-hidden="true" title="Delete" (click)="deleteNote()"></i>
+        </span>
+        <span class="actionIcon">
+          <i class="fa fa-pencil-square-o" aria-hidden="true" title="Create a note" (click)="createNote()"></i>
+        </span>
+      </div>
+      <div class="col-sm-4">
+        <span class="search">
+          <input type="text" placeholder="Search" [(ngModel)] = "searchText" (ngModelChange)="search(searchText)">
+        </span>
+      </div>
+
     </header>
   </div>
   <div class="row body_cont">
       <div class="col-sm-1 paddZero" *ngIf= "displayFolderFlag">
-        <app-folders [data] = "folderList" (activeFolder) = "selectedFolder($event)"></app-folders>
+        <app-folders [data] = "folderList" [activatedFolder] = "activeFolderDetails" (activeFolder) = "selectedFolder($event)"></app-folders>
         <span class="actionFolder" (click)="createFolder()" title= "Create a folder" >
           <i class="fa fa-plus-circle" aria-hidden="true"></i> New Folder
         </span>
